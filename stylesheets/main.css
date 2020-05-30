@@ -1,5 +1,15 @@
 /*********** GENERAL ***********/
 
+::-webkit-scrollbar{
+  width: 5px;
+  height: 8px;
+  background-color: #aaa;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000; 
+}
+
 * {
   box-sizing: border-box;
   
@@ -81,6 +91,9 @@ h1{
   text-shadow: 5px 5px 2px rgba(255, 255, 255, .4);
 }
 
+a{
+  text-decoration: none;
+}
 
 @media only screen and (min-width: 1200px) {
  }
