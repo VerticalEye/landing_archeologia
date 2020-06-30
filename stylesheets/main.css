@@ -28,7 +28,7 @@ html {
 .btn {
   display: inline-block;
   background: #eb8613;
-  padding: 24px 48px;
+  padding: 20px 20px;
   color: white;
   text-transform: uppercase;
   border: 0;
@@ -55,7 +55,9 @@ img {
   width: 100%;
 }
 
-
+main{
+  min-height: calc(100vh - 90px - 31px);
+}
 
 
 header{
@@ -72,23 +74,59 @@ header .row{
   justify-content: center;
 }
 
+.hero .btn{
+  position: absolute;
+  right: 5%;
+  top: 15%;
+}
 
 
 .hero{
-  font-size: 2.5rem;
-  min-height: calc(100vh - 90px - 31px);
+  font-size: 2rem;
+  height: 40vh;
   background: linear-gradient(rgba(0, 0, 0, .7), rgba(255, 255, 255, .1)),
               url(../images/annie-spratt-g5H5qXscAA8-unsplash.jpg) no-repeat center / cover;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.hero div{
-  width: 80%;
+.hero .img-container{
+  width: 10%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
 }
 
-h1{
+.ovale{
+  position: absolute;
+  height: 200%;
+  width: 90%;
+  left: -40%;
+  top: -50%;
+  background-color: rgba(0, 0, 0, .9); 
+  border-radius: 100%;
+
+}
+
+.ovale h1{
   margin: auto;
   text-shadow: 5px 5px 2px rgba(255, 255, 255, .4);
+
+}
+.ovale .title-container{
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  max-width: 600px;
+}
+
+#description{
+  font-size: 1.5rem;
+}
+
+#lower{
+  box-shadow: 0 -2px 0 rgba(0, 0, 0, .3);
 }
 
 a{
@@ -110,7 +148,9 @@ a{
 
 
 @media screen and (max-width: 991px) {
-  
+  .hero{
+    font-size: 1.5rem;
+  }
 
 
 }
@@ -125,13 +165,31 @@ a{
 @media only screen and (max-width: 767px) {
 
   .hero{
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
-  .btn{
-  padding: 12px 24px;
-  max-width: 200px;
+  .hero .btn{
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  padding: 10px 20px;
+  max-width: 150px;
+  font-size: 1rem;
   }
+
+.hero .img-container{
+  top: 40%;
+  left: 45%;
+}
+
+
+.ovale .title-container{
+  left: 45%;
+  top: 45%;
+  
+}
+
+
 
 }
 
