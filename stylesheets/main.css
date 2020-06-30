@@ -51,6 +51,11 @@ html {
   color: #ffffff;
 }
 
+.normal-text{
+  font-size: 1.5rem;
+}
+
+
 img {
   width: 100%;
 }
@@ -121,9 +126,8 @@ header .row{
   max-width: 600px;
 }
 
-#description{
-  font-size: 1.5rem;
-}
+
+
 
 #lower{
   box-shadow: 0 -2px 0 rgba(0, 0, 0, .3);
