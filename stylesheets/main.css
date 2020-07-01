@@ -37,7 +37,6 @@ html {
   box-shadow: 5px 5px 2px rgba(0, 0, 0, .2);
   max-width: 300px;
   text-align: center;
-  margin: 60px auto;
   font-weight: bold;
   font-size: 2rem;
 }
@@ -82,7 +81,7 @@ header .row{
 .hero .btn{
   position: absolute;
   right: 5%;
-  top: 15%;
+  top: 40%;
 }
 
 
@@ -90,7 +89,7 @@ header .row{
   font-size: 2rem;
   height: 40vh;
   background: linear-gradient(rgba(0, 0, 0, .7), rgba(255, 255, 255, .1)),
-              url(../images/annie-spratt-g5H5qXscAA8-unsplash.jpg) no-repeat center / cover;
+              fixed url(../images/annie-spratt-g5H5qXscAA8-unsplash.jpg) no-repeat bottom/ cover;
   justify-content: center;
   position: relative;
   overflow: hidden;
@@ -168,6 +167,13 @@ a{
 
 @media only screen and (max-width: 767px) {
 
+
+
+
+
+}
+
+@media only screen and (max-width: 575px) {
   .hero{
     font-size: 1rem;
   }
@@ -192,13 +198,6 @@ a{
   top: 45%;
   
 }
-
-
-
-}
-
-@media only screen and (max-width: 575px) {
-
 }
 
 @media only screen and (min-width: 576px){
